@@ -14,43 +14,43 @@ render()
 
    return (
 
-      <View style={styles.container}>
-       <Swiper ref='swiper' style={styles.wrapper} showsButtons={false} loop={false}>
+      <View style={summaryTheme.container}>
+       <Swiper ref='swiper' style={summaryTheme.wrapper} showsButtons={false} loop={false}>
       
-        <View style={styles.slide1}>
+        <View style={summaryTheme.slide1}>
 
-         <View style={styles.row1}>
+         <View style={summaryTheme.row1}>
            <TouchableOpacity onPress = {this.goToLesson}>
-           <Text style={styles.skip}>Skip</Text>
+           <Text style={summaryTheme.skip}>Skip</Text>
           </TouchableOpacity>
          </View>
 
-          <View style={styles.row2}>
+          <View style={summaryTheme.row2}>
 
 <ScrollView showsVerticalScrollIndicator={true}>
-<Text style={styles.wordHeading}>For vs Of </Text>
-<Text style={styles.subheading}>Of </Text>
-<Text style={styles.examples}>{`‘Of’ usually shows a connection or belonging.\nIs she a friend of yours?
+<Text style={summaryTheme.wordHeading}>For vs Of </Text>
+<Text></Text>
+<Text style={summaryTheme.subheading}>Of </Text>
+<Text style={summaryTheme.examples}>{`‘Of’ usually shows a connection or belonging.\nIs she a friend of yours?
 `}</Text>
-<Text style={styles.subheading}>For </Text>
-<Text style={styles.examples}>{`‘For’ usually tells us about the use of something, a reason or purpose.\nWe need new batteries for the remote control\n
-`}</Text>
+<Text style={summaryTheme.subheading}>For </Text>
+<Text style={summaryTheme.examples}>{`‘For’ usually tells us about the use of something, a reason or purpose.\nWe need new batteries for the remote control\n`}</Text>
 
 
 
-<Text style={styles.examples}>{`❎They were arrested and accused for murder\n✅They were arrested and accused of murder.
-.\n`}</Text>
+<Text style={summaryTheme.examples}>{`❎ They were arrested and accused for murder\n✔ They were arrested and accused of murder.
+\n`}</Text>
 </ScrollView>
             
        
           
           </View>
 
-         <View style={styles.row3}>
+         <View style={summaryTheme.row3}>
         
-          <View style={styles.row3inside}>
-          <TouchableOpacity style={styles.button} onPress={() => this.refs.swiper.scrollBy(1)}>
-          <Text style={styles.buttonText}>Next</Text>
+          <View style={summaryTheme.row3inside}>
+          <TouchableOpacity style={summaryTheme.button} onPress={() => this.refs.swiper.scrollBy(1)}>
+          <Text style={summaryTheme.buttonText}>Next</Text>
           </TouchableOpacity>
            
           </View>
@@ -63,35 +63,37 @@ render()
 
         
 
-         <View style={styles.slide2}>
+         <View style={summaryTheme.slide2}>
 
-         <View style={styles.row1}>
+         <View style={summaryTheme.row1}>
          <TouchableOpacity onPress = {this.goToLesson}>
-           <Text style={styles.skip}>Skip</Text>
+           <Text style={summaryTheme.skip}>Skip</Text>
           </TouchableOpacity>
          </View>
 
-          <View style={styles.row2}>
+          <View style={summaryTheme.row2}>
  <ScrollView showsVerticalScrollIndicator={true}>           
-<Text  style={styles.subheading}>When to Use Off</Text>
-
-<Text  style={styles.subheading}>Off is the opposite of on:</Text>
-
-
-<Text style={styles.examples}>{`You should always make sure the stove is turned off after cooking.\n`}</Text>
-
-<Text style={styles.examples}>{`Off can also be used when we want to say that something is away from a place:\nThe dog ran off.\n`}</Text>
+<Text  style={summaryTheme.wordHeading}>When to Use 'Off'</Text>
+<Text></Text>
+<Text  style={summaryTheme.subheading}>'Off' is the opposite of on:\n</Text>
 
 
-<Text style={styles.examples}>{`We can use off when we want to say that something has been removed:\nHe took the wheel off the car.`}</Text>
+<Text style={summaryTheme.examples}>{`❎ You should always make sure the stove is turned of after cooking.\n✔ You should always make sure the stove is turned off after cooking.\n`}</Text>
+
+<Text style={summaryTheme.subheading}>{`'Off' can also be used when we want to say that something is away from a place:\n`}</Text>
+
+<Text style={summaryTheme.examples}>{`❎ The dog ran of.\n✔ The dog ran off.\n`}</Text>
+
+<Text style={summaryTheme.subheading}>{`We can use 'off' when we want to say that something has been removed:\n`}</Text>
+<Text style={summaryTheme.examples}>{`❎ He took the wheel of the car.\n✔ He took the wheel off the car.\n`}</Text>
 </ScrollView>
 
           </View>
 
-       <View style={styles.row3}>
-          <View style={styles.row3inside}>
-          <TouchableOpacity style={styles.button}  onPress = {this.goToLesson}>
-          <Text style={styles.buttonText}>Start Lesson</Text>
+       <View style={summaryTheme.row3}>
+          <View style={summaryTheme.row3inside}>
+          <TouchableOpacity style={summaryTheme.button}  onPress = {this.goToLesson}>
+          <Text style={summaryTheme.buttonText}>Start Lesson</Text>
           </TouchableOpacity>
            
           </View>
@@ -108,131 +110,3 @@ render()
    )
 }
 }
-
-const styles = StyleSheet.create({
-
- container:{
-   flex:1,
-   backgroundColor:'#034569',
- },
-  wrapper: {
-  },
-  slide1: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-   
-  },
-  slide2: {
-     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-  },
-  slide3: {
-      flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-  },
-  text: {
-    color: '#000000',
-    fontSize: 25,
-    fontFamily: 'serif',
-    fontWeight: 'bold',
-  },
-  skipstyle:{
-   justifyContent:'flex-end'
-  },
-  button: {
-    backgroundColor: '#cadcf1',
-    height:'70%',
-    width:Dimensions.get('window').width,
-    justifyContent:'center'
-
-    
-  },
-  buttonText:{
-    
-   textAlign:'center',
-   fontSize:20,
-   color:'#021f4f',
-   alignItems:'center',
-   fontFamily: 'OpenSans-SemiBold',  },
-   
-   row1:{
-   height:Dimensions.get('window').height/10,
-  // backgroundColor:'pink',
-   justifyContent:'center'
-   
-   },
-
- row2:{
-   height:Dimensions.get('window').height/1.5,
-   marginLeft:'5%',
-   marginRight:'5%',
-  backgroundColor:'#fafafa',
-  borderWidth:2,
-  borderColor:'#e5e5e5',
-  paddingLeft:'2%',
- paddingRight:'2%'
- },
-
- row3:{
-   height:Dimensions.get('window').height/7,
-   justifyContent:'center',
-   alignItems:'center',
-   flexDirection:'row',
-   //backgroundColor:'yellow'
- },
- bodyHeaading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#000000',
-   fontSize:17
- },
- examples:{
-   
-   fontSize:15,
-   color:'#1c3a63',
-   fontFamily: 'OpenSans-SemiBold',
- 
- },
- subheading:{
-   fontFamily: 'OpenSans-Bold',
-   //fontWeight:'bold',
-   color:'#000000',
-   fontSize:15
- },
-wordHeading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#228B22',
-   fontSize:18
- },
-rWordHeading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#228B22',
-   fontSize:18,
-   marginTop:'3%'
- },
-skip:{
-   textAlign:'right',
-   fontFamily: 'OpenSans-SemiBold',
-   textDecorationLine:'underline',
-   color:'#fafafa',
-   fontSize:15,
-   marginRight:'5%'
-},
-row3inside:{
-  width:'100%',
-  alignItems:'center',
-  alignSelf:'flex-end',
-   borderWidth: 1.5,
-   borderColor: '#021f4f',
-   
-}
-
-});

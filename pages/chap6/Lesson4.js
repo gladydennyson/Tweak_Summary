@@ -14,29 +14,30 @@ render()
 
    return (
 
-      <View style={styles.container}>
-       <Swiper ref='swiper' style={styles.wrapper} showsButtons={false} loop={false}>
+      <View style={summaryTheme.container}>
+       <Swiper ref='swiper' style={summaryTheme.wrapper} showsButtons={false} loop={false}>
       
-        <View style={styles.slide1}>
+        <View style={summaryTheme.slide1}>
 
-         <View style={styles.row1}>
+         <View style={summaryTheme.row1}>
            <TouchableOpacity onPress = {this.goToLesson}>
-           <Text style={styles.skip}>Skip</Text>
+           <Text style={summaryTheme.skip}>Skip</Text>
           </TouchableOpacity>
          </View>
 
-          <View style={styles.row2}>
+          <View style={summaryTheme.row2}>
 
 <ScrollView showsVerticalScrollIndicator={true}>
-<Text  style={styles.wordHeading}>May - positive doubt</Text>
-<Text  style={styles.subheading}>Meanings:</Text>
-<Text  style={styles.subheading}>1.This is used to ask formal permissions</Text>
+<Text  style={summaryTheme.wordHeading}>May - positive doubt</Text>
+<Text></Text>
+<Text  style={summaryTheme.subheading}>Meanings:</Text>
+<Text  style={summaryTheme.subheading}>1.This is used to ask formal permissions</Text>
 
-<Text style={styles.examples}>{`May I come in?\nMay I say something now?\n`}</Text>
+<Text style={summaryTheme.examples}>{`May I come in?\nMay I say something now?\n`}</Text>
 
-<Text  style={styles.subheading}>2.Used to suggest something that is possible</Text>
+<Text  style={summaryTheme.subheading}>2.Used to suggest something that is possible</Text>
 
-<Text style={styles.examples}>{`They may be late\nI may be wrong.`}</Text>
+<Text style={summaryTheme.examples}>{`They may be late\nI may be wrong.`}</Text>
 
 
 
@@ -47,11 +48,11 @@ render()
  </ScrollView>         
           </View>
 
-         <View style={styles.row3}>
+         <View style={summaryTheme.row3}>
         
-          <View style={styles.row3inside}>
-          <TouchableOpacity style={styles.button} onPress={() => this.refs.swiper.scrollBy(1)}>
-          <Text style={styles.buttonText}>Next</Text>
+          <View style={summaryTheme.row3inside}>
+          <TouchableOpacity style={summaryTheme.button} onPress={() => this.refs.swiper.scrollBy(1)}>
+          <Text style={summaryTheme.buttonText}>Next</Text>
           </TouchableOpacity>
            
           </View>
@@ -62,21 +63,22 @@ render()
 
         </View>
 
-         <View style={styles.slide2}>
+         <View style={summaryTheme.slide2}>
 
-          <View style={styles.row1}>
+          <View style={summaryTheme.row1}>
          <TouchableOpacity onPress = {this.goToLesson}>
-           <Text style={styles.skip}>Skip</Text>
+           <Text style={summaryTheme.skip}>Skip</Text>
           </TouchableOpacity>
          </View>
 
-          <View style={styles.row2}>
+          <View style={summaryTheme.row2}>
             
 <ScrollView showsVerticalScrollIndicator={true}>
-<Text  style={styles.wordHeading}>Might - strong uncertainty </Text>
-<Text  style={styles.subheading}>Meanings: Might is the past form of “May” and it tells us about the possibility for something to happen.</Text>
+<Text  style={summaryTheme.wordHeading}>Might - strong uncertainty </Text>
+<Text></Text>
+<Text  style={summaryTheme.subheading}>Meanings: Might is the past form of “May” and it tells us about the possibility for something to happen.</Text>
 
-<Text style={styles.examples}>{`\nHe might have finished the work.\nI might go see a doctor.\nI might not come this time.\nHe might be right.`}</Text>
+<Text style={summaryTheme.examples}>{`\nHe might have finished the work.\nI might go see a doctor.\nI might not come this time.\nHe might be right.`}</Text>
 
 
 
@@ -86,10 +88,10 @@ render()
 
           </View>
 
-       <View style={styles.row3}>
-          <View style={styles.row3inside}>
-          <TouchableOpacity style={styles.button} onPress={() => this.refs.swiper.scrollBy(1)}>
-          <Text style={styles.buttonText}>Next</Text>
+       <View style={summaryTheme.row3}>
+          <View style={summaryTheme.row3inside}>
+          <TouchableOpacity style={summaryTheme.button} onPress={() => this.refs.swiper.scrollBy(1)}>
+          <Text style={summaryTheme.buttonText}>Next</Text>
           </TouchableOpacity>
            
           </View>
@@ -99,37 +101,38 @@ render()
 
         </View>
 
-        <View style={styles.slide3}>
+        <View style={summaryTheme.slide3}>
 
-          <View style={styles.row1}>
+          <View style={summaryTheme.row1}>
          <TouchableOpacity onPress = {this.goToLesson}>
-           <Text style={styles.skip}>Skip</Text>
+           <Text style={summaryTheme.skip}>Skip</Text>
           </TouchableOpacity>
          </View>
 
-          <View style={styles.row2}>
+          <View style={summaryTheme.row2}>
             
 <ScrollView showsVerticalScrollIndicator={true}>
-<Text  style={styles.wordHeading}>Must - Compulsion</Text>
-<Text  style={styles.subheading}>Meanings:</Text>
-<Text  style={styles.subheading}>1.Used to express something formally required or necessary.
+<Text  style={summaryTheme.wordHeading}>Must - Compulsion</Text>
+<Text></Text>
+<Text  style={summaryTheme.subheading}>Meanings:</Text>
+<Text  style={summaryTheme.subheading}>1.Used to express something formally required or necessary.
 </Text>
 
-<Text style={styles.examples}>{`I must complete the project by this week.\nYou must answer my question right now.\n`}</Text>
+<Text style={summaryTheme.examples}>{`I must complete the project by this week.\nYou must answer my question right now.\n`}</Text>
 
-<Text  style={styles.subheading}>2.Used to show that something is very likely.</Text>
+<Text  style={summaryTheme.subheading}>2.Used to show that something is very likely.</Text>
 
-<Text style={styles.examples}>{`He must be a genius.\nYou must be joking!\nYou must be joking!`}</Text>
+<Text style={summaryTheme.examples}>{`He must be a genius.\nYou must be joking!\nYou must be joking!`}</Text>
 </ScrollView>
 
 
 
           </View>
 
-       <View style={styles.row3}>
-          <View style={styles.row3inside}>
-          <TouchableOpacity style={styles.button}  onPress = {this.goToLesson}>
-          <Text style={styles.buttonText}>Start Lesson</Text>
+       <View style={summaryTheme.row3}>
+          <View style={summaryTheme.row3inside}>
+          <TouchableOpacity style={summaryTheme.button}  onPress = {this.goToLesson}>
+          <Text style={summaryTheme.buttonText}>Start Lesson</Text>
           </TouchableOpacity>
            
           </View>
@@ -146,132 +149,3 @@ render()
    )
 }
 }
-
-const styles = StyleSheet.create({
-
- container:{
-   flex:1,
-   backgroundColor:'#034569',
- },
-  wrapper: {
-  },
-  slide1: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-   
-  },
-  slide2: {
-     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-  },
-  slide3: {
-      flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',    
-    alignItems: 'stretch',
-  },
-
-  text: {
-    color: '#000000',
-    fontSize: 25,
-    fontFamily: 'serif',
-    fontWeight: 'bold',
-  },
-  skipstyle:{
-   justifyContent:'flex-end'
-  },
-  button: {
-    backgroundColor: '#cadcf1',
-    height:'70%',
-    width:Dimensions.get('window').width,
-    justifyContent:'center'
-
-    
-  },
-  buttonText:{
-    
-   textAlign:'center',
-   fontSize:20,
-   color:'#021f4f',
-   alignItems:'center',
-   fontFamily: 'OpenSans-SemiBold',  },
-   
-   row1:{
-   height:Dimensions.get('window').height/10,
-  // backgroundColor:'pink',
-   justifyContent:'center'
-   
-   },
-
- row2:{
-   height:Dimensions.get('window').height/1.5,
-   marginLeft:'5%',
-   marginRight:'5%',
-  backgroundColor:'#fafafa',
-  borderWidth:2,
-  borderColor:'#e5e5e5',
-  paddingLeft:'2%',
- paddingRight:'2%'
- },
-
- row3:{
-   height:Dimensions.get('window').height/7,
-   justifyContent:'center',
-   alignItems:'center',
-   flexDirection:'row',
-   //backgroundColor:'yellow'
- },
- bodyHeaading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#000000',
-   fontSize:17
- },
- examples:{
-   
-   fontSize:15,
-   color:'#1c3a63',
-   fontFamily: 'OpenSans-SemiBold',
- 
- },
- subheading:{
-   fontFamily: 'OpenSans-Bold',
-   //fontWeight:'bold',
-   color:'#000000',
-   fontSize:15
- },
-wordHeading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#228B22',
-   fontSize:18
- },
-rWordHeading:{
-   fontFamily: 'OpenSans-ExtraBold',
-   //fontWeight:'bold',
-   color:'#228B22',
-   fontSize:18,
-   marginTop:'3%'
- },
-skip:{
-   textAlign:'right',
-   fontFamily: 'OpenSans-SemiBold',
-   textDecorationLine:'underline',
-   color:'#fafafa',
-   fontSize:15,
-   marginRight:'5%'
-},
-row3inside:{
-  width:'100%',
-  alignItems:'center',
-  alignSelf:'flex-end',
-   borderWidth: 1.5,
-   borderColor: '#021f4f',
-   
-}
-
-});
