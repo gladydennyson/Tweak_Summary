@@ -6,7 +6,7 @@ export default summaryTheme = StyleSheet.create({
 
  container:{
    flex:1,
-   backgroundColor:'#034569',
+   backgroundColor:'#212121',
  },
   wrapper: {
   },
@@ -39,7 +39,7 @@ export default summaryTheme = StyleSheet.create({
    justifyContent:'flex-end'
   },
   button: {
-    backgroundColor: '#cadcf1',
+    backgroundColor: '#4CAF50',
     height:'70%',
     width:Dimensions.get('window').width,
     justifyContent:'center'
@@ -47,7 +47,6 @@ export default summaryTheme = StyleSheet.create({
     
   },
   buttonText:{
-    
    textAlign:'center',
    fontSize:20,
    color:'#021f4f',
@@ -79,14 +78,13 @@ export default summaryTheme = StyleSheet.create({
    flexDirection:'row',
    //backgroundColor:'yellow'
  },
- bodyHeaading:{
+ bodyHeading:{
    fontFamily: 'OpenSans-ExtraBold',
    //fontWeight:'bold',
    color:'#000000',
    fontSize:17
  },
  examples:{
-   
    fontSize:15,
    color:'#1c3a63',
    fontFamily: 'OpenSans-SemiBold',
